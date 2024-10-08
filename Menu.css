@@ -129,3 +129,19 @@ body {
 .pizza-item:hover, .menu-item:hover {
     transform: scale(1.05);
 }
+
+.restaurant-footer {
+    background-color: #333; /* Warna latar footer */
+    color: white; /* Warna teks footer */
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Agar footer selalu di bagian bawah */
+    width: 100%;
+    bottom: 0;
+}
+
+.restaurant-footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
