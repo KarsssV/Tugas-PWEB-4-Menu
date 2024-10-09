@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Menu</title>
     <link rel="stylesheet" href="Menu.css">
-    
 </head>
 <body>
 
@@ -13,8 +12,7 @@
         <h1>Karl's Pizzeria</h1>
     </header>
     
-    <div class="menu-container">
-        <!-- Top Navigation -->
+    <div class="container">
         <nav class="menu-nav">
             <div class="menu-category active" data-target="pizza-section">🍕 Pizza</div>
             <div class="menu-category" data-target="burgers-section">🍔 Burgers</div>
@@ -23,189 +21,170 @@
             <div class="menu-category" data-target="drinks-section">🥤 Drinks</div>
         </nav>
 
-        <!-- Pizza Menu Section -->
-        <section class="menu-section pizza-section active">
-            <h1>Pizza</h1>
-            <p class="size-options">32cm / 48cm</p>
-            <div class="pizza-grid">
-                <!-- Add pizza items here -->
-                <div class="pizza-item">
-                    <img src="margherita.jpg" alt="Margherita Pizza">
-                    <h2>Margherita</h2>
-                    <p>A simple yet delicious combination of fresh mozzarella, fragrant basil, and ripe tomatoes on a light tomato sauce base</p>
-                    <span class="price">220K / 250K</span>
+        <main class="menu-articles">
+            <!-- Pizza Menu Section -->
+            <article class="menu-section pizza-section active">
+                <h1>Pizza</h1>
+                <p class="size-options">32cm / 48cm</p>
+                <div class="pizza-grid">
+                    <div class="pizza-item">
+                        <img src="margherita.jpg" alt="Margherita Pizza">
+                        <h2>Margherita</h2>
+                        <p>A simple yet delicious combination of fresh mozzarella, fragrant basil, and ripe tomatoes on a light tomato sauce base.</p>
+                        <span class="price">220K / 250K</span>
+                    </div>
+                    <div class="pizza-item">
+                        <img src="mushroom.jpg" alt="Mushroom Pizza">
+                        <h2>Mushroom</h2>
+                        <p>A savory blend of rich tomato sauce, fresh mozzarella, and tender cremini mushrooms.</p>
+                        <span class="price">220K / 250K</span>
+                    </div>
+                    <div class="pizza-item">
+                        <img src="hawaiian.jpeg" alt="Hawaiian Pizza">
+                        <h2>Hawaiian</h2>
+                        <p>A delightful mix of sweet pineapple and savory ham atop tomato sauce and mozzarella.</p>
+                        <span class="price">265K / 300K</span>
+                    </div>
+                    <div class="pizza-item">
+                        <img src="pepperoni.jpg" alt="Pepperoni Pizza">
+                        <h2>Pepperoni</h2>
+                        <p>Classic zesty tomato sauce and gooey mozzarella, topped with spicy, crispy pepperoni slices.</p>
+                        <span class="price">285K / 320K</span>
+                    </div>
                 </div>
-                <!-- Add more pizzas -->
-                <div class="pizza-item">
-                    <img src="mushroom.jpg" alt="Mushroom Pizza">
-                    <h2>Mushroom</h2>
-                    <p>A savory blend of rich tomato sauce, fresh mozzarella, and tender cremini mushrooms</p>
-                    <span class="price">220K / 250K</span>
-                </div>
+            </article>
 
-                <div class="pizza-item">
-                    <img src="hawaiian.jpeg" alt="Hawaiian Pizza">
-                    <h2>Hawaiian</h2>
-                    <p>A delightful mix of sweet pineapple and savory ham atop tomato sauce and mozzarella</p>
-                    <span class="price">265K / 300K</span>
+            <!-- Burgers Section -->
+            <article class="menu-section burgers-section">
+                <h1>Burgers</h1>
+                <p class="size-options">Ala Carte / Packet</p>
+                <div class="item-grid">
+                    <div class="menu-item">
+                        <img src="cheeseburger.webp" alt="Cheeseburger">
+                        <h2>Cheese Burger</h2>
+                        <p>Juicy beef patty topped with melted cheese, fresh lettuce, and a tangy sauce on a toasted bun.</p>
+                        <span class="price">95K / 115K</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="chickenburger.jpeg" alt="Chickenburger">
+                        <h2>Chicken Burger</h2>
+                        <p>Crispy chicken breast with lettuce, tomato, and a zesty mayo on a soft bun.</p>
+                        <span class="price">55K / 75K</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="beefburger.png" alt="Beefburger">
+                        <h2>Beef Burger</h2>
+                        <p>Classic beef patty with fresh toppings, served on a toasted bun with your choice of sauce.</p>
+                        <span class="price">75K / 95K</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="fishburger.jpg" alt="Fish Burger">
+                        <h2>Fish Burger</h2>
+                        <p>Crispy fish fillet paired with tartar sauce, lettuce, and a soft bun for a fresh, savory bite.</p>
+                        <span class="price">65K / 85K</span>
+                    </div>
                 </div>
+            </article>
 
-                <div class="pizza-item">
-                    <img src="pepperoni.jpg" alt="Pepperoni Pizza">
-                    <h2>Pepperoni</h2>
-                    <p>Classic zesty tomato sauce and gooey mozzarella, topped with spicy, crispy pepperoni slices</p>
-                    <span class="price">285K / 320K</span>
+            <!-- Snacks Section -->
+            <article class="menu-section snacks-section">
+                <h1>Snacks & Sides</h1>
+                <div class="item-grid">
+                    <div class="menu-item">
+                        <img src="fries.jpg" alt="Fries">
+                        <h2>Fries</h2>
+                        <p>Crispy golden fries, perfectly salted and served hot for a satisfying crunch.</p>
+                        <span class="price">35K</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="garlicbread.jpg" alt="Garlic Bread">
+                        <h2>Garlic Bread</h2>
+                        <p>Toasted bread infused with garlic butter, topped with fresh herbs and a hint of cheese.</p>
+                        <span class="price">30K</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="nachos.jpg" alt="Nachos">
+                        <h2>Nachos</h2>
+                        <p>Crispy tortilla chips loaded with melted cheese, jalapeños, and a side of salsa.</p>
+                        <span class="price">45K</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="onionrings.jpg" alt="Onion Rings">
+                        <h2>Onion Rings</h2>
+                        <p>Crispy, golden-brown onion rings with a crunchy coating and a tender center.</p>
+                        <span class="price">30K</span>
+                    </div>
                 </div>
+            </article>
 
-            </div>
-        </section>
+            <!-- Salads Section -->
+            <article class="menu-section salads-section">
+                <h1>Salads</h1>
+                <div class="item-grid">
+                    <div class="menu-item">
+                        <img src="caesarsalad.jpg" alt="Caesar Salad">
+                        <h2>Caesar Salad</h2>
+                        <p>Crisp romaine lettuce, crunchy croutons, and parmesan cheese, tossed in a creamy Caesar dressing.</p>
+                        <span class="price">45K</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="coleslawsalad.jpg" alt="Coleslaw Salad">
+                        <h2>Coleslaw Salad</h2>
+                        <p>A refreshing mix of shredded cabbage and carrots, coated in a tangy, creamy dressing.</p>
+                        <span class="price">30K</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="wakamesalad.jpg" alt="Wakame Salad">
+                        <h2>Wakame Salad</h2>
+                        <p>Fresh seaweed salad with a savory sesame dressing, offering a light and flavorful bite.</p>
+                        <span class="price">50K</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="salmonsalad.jpg" alt="Salmon Salad">
+                        <h2>Salmon Salad</h2>
+                        <p>Delicate slices of fresh salmon served atop mixed greens with a light soy-sesame dressing.</p>
+                        <span class="price">75K</span>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Burgers Section -->
-        <section class="menu-section burgers-section">
-            <h1>Burgers</h1>
-            <p class="size-options">Ala Carte / Packet</p>
-            <div class="item-grid">
-                <!-- Add burger items here -->
-                <div class="menu-item">
-                    <img src="cheeseburger.webp" alt="Cheeseburger">
-                    <h2>Cheese Burger</h2>
-                    <p>Juicy beef patty topped with melted cheese, fresh lettuce, and a tangy sauce on a toasted bun</p>
-                    <span class="price">95K / 115K</span>
+            <!-- Drinks Section -->
+            <article class="menu-section drinks-section">
+                <h1>Drinks</h1>
+                <div class="item-grid">
+                    <div class="menu-item">
+                        <img src="soda.jpg" alt="Soda">
+                        <h2>Soda</h2>
+                        <p>Refreshing and fizzy, the perfect bubbly boost to complement your meal.</p>
+                        <span class="price">15K</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="smoothies.jpg" alt="Smoothies">
+                        <h2>Smoothies</h2>
+                        <p>A creamy blend of fresh fruits and yogurt, packed with flavor and nutrients.</p>
+                        <span class="price">35K</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="juice.jpg" alt="Juice">
+                        <h2>Juice</h2>
+                        <p>Freshly squeezed fruit juice, bursting with natural sweetness and vitamins.</p>
+                        <span class="price">30K</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="milkshake.jpeg" alt="Milkshake">
+                        <h2>Milkshake</h2>
+                        <p>Rich, creamy milkshake made with your choice of flavor – chocolate, vanilla, or strawberry.</p>
+                        <span class="price">45K</span>
+                    </div>
                 </div>
-                <!-- Add more burgers -->
-                <div class="menu-item">
-                    <img src="chickenburger.jpeg" alt="Chickenburger">
-                    <h2>Chicken Burger</h2>
-                    <p>Crispy chicken breast with lettuce, tomato, and a zesty mayo on a soft bun</p>
-                    <span class="price">55K / 75K</span>
-                </div>
-
-                <div class="menu-item">
-                    <img src="beefburger.png" alt="Beefburger">
-                    <h2>Beef Burger</h2>
-                    <p>Classic beef patty with fresh toppings, served on a toasted bun with your choice of sauce</p>
-                    <span class="price">75K / 95K</span>
-                </div>
-
-                <div class="menu-item">
-                    <img src="fishburger.jpg" alt="Cheeseburger">
-                    <h2>Fish Burger</h2>
-                    <p>Crispy fish fillet paired with tartar sauce, lettuce, and a soft bun for a fresh, savory bite</p>
-                    <span class="price">65K / 85K</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Snacks Section -->
-        <section class="menu-section snacks-section">
-            <h1>Snacks & Sides</h1>
-            <div class="item-grid">
-                <!-- Add snacks items here -->
-                <div class="menu-item">
-                    <img src="fries.jpg" alt="Fries">
-                    <h2>Fries</h2>
-                    <p>Crispy golden fries, perfectly salted and served hot for a satisfying crunch</p>
-                    <span class="price">35K</span>
-                </div>
-                <!-- Add more snacks -->
-                <div class="menu-item">
-                    <img src="garlicbread.jpg" alt="GarlicBread">
-                    <h2>Garlic Bread</h2>
-                    <p>Toasted bread infused with garlic butter, topped with fresh herbs and a hint of cheese</p>
-                    <span class="price">30K</span>
-                </div>
-
-                <div class="menu-item">
-                    <img src="Nachos.jpg" alt="Nachos">
-                    <h2>Nachos</h2>
-                    <p>Crispy tortilla chips loaded with melted cheese, jalapeños, and a side of salsa</p>
-                    <span class="price">45K</span>
-                </div>
-
-                <div class="menu-item">
-                    <img src="onionrings.jpg" alt="OnionRing">
-                    <h2>Onion Rings</h2>
-                    <p>Crispy, golden-brown onion rings with a crunchy coating and a tender center</p>
-                    <span class="price">30K</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Salads Section -->
-        <section class="menu-section salads-section">
-            <h1>Salads</h1>
-            <div class="item-grid">
-                <!-- Add salad items here -->
-                <div class="menu-item">
-                    <img src="caesarsalad.jpg" alt="CaesarSalad">
-                    <h2>Caesar Salad</h2>
-                    <p>Crisp romaine lettuce, crunchy croutons, and parmesan cheese, tossed in a creamy Caesar dressing</p>
-                    <span class="price">45K</span>
-                </div>
-                <!-- Add more salads -->
-                <div class="menu-item">
-                    <img src="coleslawsalad.jpg" alt="ColeslawSalad">
-                    <h2>Coleslaw Salad</h2>
-                    <p>A refreshing mix of shredded cabbage and carrots, coated in a tangy, creamy dressing</p>
-                    <span class="price">30K</span>
-                </div>
-
-                <div class="menu-item">
-                    <img src="wakamesalad.jpg" alt="WakameSalad">
-                    <h2>Wakame Salad</h2>
-                    <p>Fresh seaweed salad with a savory sesame dressing, offering a light and flavorful bite</p>
-                    <span class="price">50K</span>
-                </div>
-
-                <div class="menu-item">
-                    <img src="salmonsalad.jpg" alt="SalmonSalad">
-                    <h2>Salmon Salad</h2>
-                    <p>Delicate slices of fresh salmon served atop mixed greens with a light soy-sesame dressing</p>
-                    <span class="price">75K</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Drinks Section -->
-        <section class="menu-section drinks-section">
-            <h1>Drinks</h1>
-            <div class="item-grid">
-                <!-- Add drinks items here -->
-                <div class="menu-item">
-                    <img src="soda.jpg" alt="Soda">
-                    <h2>Soda</h2>
-                    <p>Refreshing and fizzy, the perfect bubbly boost to complement your meal</p>
-                    <span class="price">15K</span>
-                </div>
-                <!-- Add more drinks -->
-                <div class="menu-item">
-                    <img src="smoothies.jpg" alt="Smoothies">
-                    <h2>Smoothies</h2>
-                    <p>A creamy blend of fresh fruits and yogurt, packed with flavor and nutrients</p>
-                    <span class="price">35K</span>
-                </div>
-
-                <div class="menu-item">
-                    <img src="juice.jpg" alt="Juice">
-                    <h2>Juice</h2>
-                    <p>Freshly squeezed fruit juice, bursting with natural sweetness and vitamins</p>
-                    <span class="price">30K</span>
-                </div>
-
-                <div class="menu-item">
-                    <img src="milkshake.jpeg" alt="Milkshake">
-                    <h2>Milkshake</h2>
-                    <p>Rich, creamy milkshake made with real ice cream and your choice of delicious flavors</p>
-                    <span class="price">35K</span>
-                </div>
-            </div>
-        </section>
+            </article>
+        </main>
     </div>
 
     <footer class="restaurant-footer">
-    <p>Follow us on Instagram: @yourrestaurant</p>
+        <p>&copy; 2024 Karl's Pizzeria. All rights reserved.</p>
     </footer>
-    
+
     <script src="Menu.js"></script>
 </body>
 </html>
