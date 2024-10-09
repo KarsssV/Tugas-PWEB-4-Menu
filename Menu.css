@@ -14,7 +14,7 @@ body {
     background-color: #ff4d00; /* Change to your preferred color */
     padding: 20px;
     text-align: center;
-    color: white;
+    color: white;    
 }
 
 .restaurant-header h1 {
@@ -23,9 +23,8 @@ body {
     font-weight: bold;
 }
 
-
-.menu-container {
-    width: 100%;
+.container {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -33,11 +32,10 @@ body {
 
 /* Top Navigation */
 .menu-nav {
-    display: flex;
-    justify-content: space-around;
+    flex: 1; /* Make the nav take up available space */
     background-color: #fff;
     padding: 10px;
-    border-bottom: 2px solid #ddd;
+    border-right: 2px solid #ddd; /* Add a border to the right */
 }
 
 .menu-category {
@@ -57,6 +55,11 @@ body {
 }
 
 /* Menu Sections */
+.menu-articles {
+    flex: 3; /* Make the main article area take more space */
+    padding: 20px;
+}
+
 .menu-section {
     display: none;
     padding: 40px 0;
@@ -135,13 +138,11 @@ body {
     color: white; /* Warna teks footer */
     padding: 20px;
     text-align: center;
-    position: fixed; /* Agar footer selalu di bagian bawah */
+    position: relative; /* Use relative instead of fixed */
     width: 100%;
-    bottom: 0;
 }
 
 .restaurant-footer p {
     margin: 0;
     font-size: 16px;
 }
-
